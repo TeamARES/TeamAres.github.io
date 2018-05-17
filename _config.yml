@@ -1,20 +1,67 @@
-# Site settings
-title: Ares
-description: 
-# baseurl: "/particle" # the subpath of your site, e.g. /blog
-# url: "localhost:3000" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
+title:            Balzac
+tagline:          A beautiful theme.
+description:      Describe your website.
+canonical: http://jekyll.gtat.me
 
-# User settings
-username: TeamAres
-user_description: Ares is a Rover being built by NSIT undergrads for Mars Exploration
-user_title: Engineering a Martian Rover
-email: teamaresnsit@gmail.com
-twitter_username: TeamARES
-github_username:  TeamARES
-gplus_username:  AresNSIT
+# Owner/author information
+owner:
+  name:           Cole Townsend
+  avatar:         avatar.png
+  bio:            "Aesthete & Athlete"
+  email:          cole@coletownsend.com
+  twitter:        twnsndco
+  github:         coletownsend
+  instagram:      ctrunsthis
+  dribbble:       coletownsend
+  disqus:         balzac
+  location:       "Buffalo, NY"
+  # Plug in your disqus shortname!
 
-# Google-analytics
-google-analytics:
-  id: ""
+tools:
+  standards:      "HTML, SCSS, Jekyll"
+  software:       "git"
 
-exclude: ['package.json', 'src' , 'node_modules']
+# Open Graph customization
+opengraph:
+  locale:           en_US
+
+# Links to include in top navigation
+# For external links add external: true
+links:
+  - title: About
+    url: /about
+  - title: Github
+    url: https://github.com/ColeTownsend/Balzac-for-Jekyll
+    external: true
+  - title: Cole Who?
+    url: http://coletownsend.com
+    external: true
+
+# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone:    America/New_York
+future:      true
+highlighter: pygments
+markdown:    kramdown
+
+kramdown:
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  use_coderay: false
+
+  coderay:
+    coderay_line_numbers:
+    coderay_line_numbers_start: 1
+    coderay_tab_width: 4
+    coderay_bold_every: 10
+    coderay_css: class
+
+sass:
+    style: :compressed
+
+# https://github.com/mojombo/jekyll/wiki/Permalinks
+permalink:   /:categories/:title
+
+include: [".htaccess"]
+exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp"]
