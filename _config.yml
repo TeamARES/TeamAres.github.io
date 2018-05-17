@@ -1,20 +1,20 @@
-title:            Balzac
-tagline:          A beautiful theme.
-description:      Describe your website.
+title:            Team ARES
+tagline:          Rover Team of NSIT.
+description:      A team of enthusiasts building a Mars Rover.
 canonical: http://jekyll.gtat.me
 
 # Owner/author information
 owner:
-  name:           Cole Townsend
+  name:           Team ARES
   avatar:         avatar.png
-  bio:            "Aesthete & Athlete"
+  bio:            "Rover Team of NSIT"
   email:          cole@coletownsend.com
-  twitter:        twnsndco
-  github:         coletownsend
-  instagram:      ctrunsthis
-  dribbble:       coletownsend
-  disqus:         balzac
-  location:       "Buffalo, NY"
+  twitter:        
+  github:         TeamARES
+  instagram:      
+  dribbble:       
+  disqus:         
+  location:       "New Delhi, India"
   # Plug in your disqus shortname!
 
 tools:
@@ -31,14 +31,14 @@ links:
   - title: About
     url: /about
   - title: Github
-    url: https://github.com/ColeTownsend/Balzac-for-Jekyll
+    url: https://github.com/TeamARES
     external: true
-  - title: Cole Who?
-    url: http://coletownsend.com
+  - title: Website
+    url: http://teamares.ml
     external: true
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-timezone:    America/New_York
+timezone:    Asia/Kolkata
 future:      true
 highlighter: pygments
 markdown:    kramdown
