@@ -1,0 +1,219 @@
+@media only screen and (max-width: 1065px) {
+  .links{
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1065px) {
+  .nav{
+    display: none;
+    }
+  .check{
+    display: none;
+  }
+  .close{
+    display: none;
+    }}
+
+body{
+	margin: 0em;
+	background-image: url('img/8320.png');
+	background-attachment: fixed;
+	color: white;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.main{
+	display: grid;
+	grid-template-columns: 6vw 45vw auto;
+}
+
+.mob{
+	display: none;
+}
+
+.sidepanel{
+	list-style-type: none;
+	padding-left: 1vw;
+	padding: 1vw;
+	margin-top: 0em;
+}
+
+.sideimage{
+	border-radius: 50%;
+	width: 95%;
+	height: 95%;
+}
+.sideimage:hover{
+	transform: scale(1.3);
+}
+.description{
+	padding: 2vw;
+	padding-bottom: 0.5vw;
+	padding-top: 1vw;
+	margin: 0em;
+}
+
+.description1{
+	padding-left: 2vw;
+	padding-right: 2vw;
+}
+
+.mainimage{
+	width: 100%;
+}
+
+.product{
+	list-style-type: none;
+	padding: 1vw;
+	padding-left: 6vw;
+	margin-bottom: 1vw;
+}
+
+.but{
+	display: inline;
+	padding: 1vw;
+	font-size: 1.5vw;
+	border: solid;
+	box-shadow: 0.4vw 0.8vw rgb(190,27,12);
+}
+
+.box{
+	border: solid;
+	padding: 2vw;
+	margin: 0em;
+	margin-left: 6vw;
+	margin-right: 4vw;
+	height: 15vw;
+	box-shadow: 0.08vw 0px 0.4vw 0.8vw rgb(190,27,12) inset;
+}
+
+h1{
+	font-size: 2.5vw;
+}
+
+p{
+	font-size: 1.5vw;
+}
+
+@media only screen and (max-width: 800px) {
+.main{
+	display: block;
+}
+.sidepanel{
+	list-style-type: none;
+	padding: 1vw;
+	margin-top: 0em;
+	margin: auto;
+	margin-left: 30%
+}
+
+.sideimage{
+	border-radius: 50%;
+	width: 10%;
+	height: 10%;
+}
+.sidelist{
+	display: inline;
+}
+.sideimage:hover{
+	transform: scale(1.3);
+}
+.mainimage{
+	width: 80%;
+	margin: auto;
+}
+.lap{
+	display: none;
+}
+.mob{
+	display: block;
+}
+}
+
+.Teammemberover{
+	height: 20vw;
+}
+
+.Team{
+	display: grid;
+	grid-template-columns: 23vw 23vw 23vw 23vw;
+	padding-right: 3vw;
+	padding-left: 3vw;
+	grid-row-gap: 2vw;
+	padding-bottom: 5vw;
+}
+.heading{
+  font-size: 6vw;
+  color: rgb(0,128,128);
+  margin-top: 0em;
+  margin-bottom: 0em;
+  padding-top: 15vw;
+  padding-left: 52.5vw;
+  padding-bottom: 1vw;
+
+}
+.moto{
+  font-size: 2.25vw;
+  margin-top: 0em;
+  margin-left: 52.5vw;
+  padding-bottom: 17.5vw; 
+  color: white;
+}
+
+.Teamimage{
+	width: 100%;
+	height: 15vw;
+	box-shadow: 0.3vw 0.6vw #888888;
+}
+
+.container{
+	position: relative;
+	text-align: center;
+	border-width: 0.25vw;
+	border: solid;
+	border-color: black;
+	margin: 2vw;
+	padding: 0.5vw;
+}
+
+.container1{
+	position: relative;
+	border-width: 0.25vw;
+	border: solid;
+	border-color: black;
+	margin: 2vw;
+	padding: 0.5vw;
+	height: 15vw;
+}
+
+.bottom{
+  position: absolute;
+  text-align: center;
+  width: 17.5vw;
+  top: 78%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.75vw;
+  padding: 0.25vw;
+}
+.memdeshead{
+ font-size: 1.5vw;
+ margin-top: 0.2vw;
+}
+
+.memdestext{
+	font-size: 1vw;
+	line-height: 1;
+
+	margin-top: 0.2vw;
+	margin-left: 1vw;
+	margin-right: 1vw;
+}
+
+
+a[href$="none.html"] {
+  display:none;
+}
+
+

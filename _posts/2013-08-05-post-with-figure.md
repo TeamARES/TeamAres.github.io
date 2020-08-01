@@ -2,6 +2,10 @@
 layout: post
 title: "Post with Figure"
 description: "Examples and code for displaying images in posts."
+owner: "Owner of the post"
+about: "You can here write about the owners of the post"
+linkdin: "add your linkdin address here"
+ownimage: "avatar.png"
 category: articles
 tags: [sample post, images, test]
 ---

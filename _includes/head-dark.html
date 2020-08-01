@@ -4,6 +4,11 @@
 <title>{% if page.title %}{{ page.title }} &#8211; {% endif %}{{ site.title }}</title>
 <meta name="description" content="{{ page.description }}">
 <meta name="keywords" content="{{ page.tags | join: ', ' }}">
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Amatic SC' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Questrial' rel='stylesheet'> 
+<link href='../assets/css/tach.css' rel='stylesheet'>
+<link href='../assets/css/style.css' rel='stylesheet'>
 
 {% include graphs.html %}
 
@@ -31,6 +36,25 @@
 <!-- Fresh Squeezed jQuery -->
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script type="text/javascript">
+  var t=0;
+  function navopen () {
+    var x = window.matchMedia("(max-width: 1065px)")
+    var navi = document.getElementsByClassName("linking");
+    var navi1 = document.getElementsByClassName("close");
+    var navi2 = document.getElementsByClassName("check");
+    if (t%2==0) {
+    navi[0].style.display="block"
+    navi1[0].src="img/close.png";
+    t++;
+  }
+  else{
+    navi[0].style.display="none"
+    navi1[0].src="img/nav_logo.png";
+    t++;
+  }
+  }
+</script>
 
 <meta http-equiv="cleartype" content="on">
 
@@ -44,23 +68,31 @@
 
 <div id="bump">
   <body class="">
-    <header class="site-header darken">
-      <div class="wrap">
-        <hgroup>
-          <h1><a href="/">{{ site.title }}</a></h1>
-        </hgroup>
-        <a href="#nav" class="menu"><span class='icons'>☰</span></a>
-        <nav role="navigation">
-          <ul>
-            <li>
-              <a href="/" title="{{ site.title }}">Home</a>
-            </li>
-            
-            {% for link in site.links %}
-                <li><a href="{% if link.external %}{{ link.url }}{% else %}{{ site.url }}{{ link.url }}{% endif %}" {% if link.external %}target="_blank"{% endif %}>{{ link.title }}</a></li>
-            {% endfor %}
-
-          </ul>
-        </nav>
-      </div>
-    </header>
+    <div style="position: fixed; width: 100%; z-index: 1;">
+<div style="display: flex; background-color: black; width: 100%;">
+<ul type="none" style="text-align:left;padding:0px;padding-left: 7vw; margin: 0em ;width: 30%;">
+  <li style="display: inline-block;padding:0px;padding-left:0.5vw;"><img src="../img/ARES_LOGO - Copy.png" width="60vw" height="60vw"></li>
+</ul>
+  <ul type="none" class="links" style="margin-top: 1vw;padding-right:7.5vw;">
+  <li style="display: inline-block;"><a href="/" style="color: white; text-decoration: none; font-size: 1.3vw; padding-left: 0.75vw;">Home</a></li>
+  <li style="display: inline-block;"><a href="#home5" style="color: white; text-decoration: none; font-size: 1.3vw; padding-left: 0.75vw;">Website</a></li>
+  <li style="display: inline-block;"><a href="/about/index.html" style="color: white; text-decoration: none; font-size: 1.3vw; padding-left: 0.75vw;">About Us</a></li>
+  <li style="display: inline-block;"><a href="#home6" style="color: white; text-decoration: none; font-size: 1.3vw; padding-left: 0.75vw;">Contact Us</a></li>
+</ul>
+ <ul type="none" class="nav" style="margin: 1vw;padding-right:0.5em;" onclick="navopen()">
+  <li style="display: inline-block; "><a  style="color: white; text-decoration: none; font-size: 1.3vw; padding-left: 0.75vw;"><img class="close" src="../img/nav_logo.png" width="40vw" height="40vw"></a></li>
+</ul>
+</div>
+<div class="check" style=" z-index: 1;">
+  <ul type="none" class="linking" style="margin: 0em; padding-left: 0em; display: none; align-self: flex-end; background-color: rgb(0,0,0,0.5);">
+  <li><a href="/" style="display: block; color: black; text-decoration: none; font-size: 2.5vw; padding-bottom: 0.75vw;  color: white;">Home</a></li>
+  <li><a href="#home5" style="display: block; color: black; text-decoration: none; font-size: 2.5vw; padding-bottom: 0.75vw;  color: white;">Website</a></li>
+  <li><a href="/about/index.html" style="display: block; color: black; text-decoration: none; font-size: 2.5vw; padding-bottom: 0.75vw;  color: white;">About Us</a></li>
+  <li><a href="#home6" style="display: block; color: black; text-decoration: none; font-size: 2.5vw; padding-bottom: 0.75vw;  color: white;">Contact Us</a></li>
+  </ul>
+</div>
+</div>
+<div>
+<img style="background: linear-gradient(-45deg, rgba(148,12,22, 0.60) 0%, rgba(18,22,148, 0.85) 100%), url(../img/6_2.png) no-repeat bottom center fixed;" class="hero" src="../img/hero.png" width="100%" height="90%">
+<div style="background: url(../img/6_2.png) fixed;">
+</div>

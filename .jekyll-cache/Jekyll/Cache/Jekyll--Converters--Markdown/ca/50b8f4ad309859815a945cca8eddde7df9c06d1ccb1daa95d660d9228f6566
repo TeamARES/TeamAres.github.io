@@ -1,0 +1,19 @@
+I"ë<p>This is a post that uses a <code>figure</code>. It stacks these images and places a nice little caption below if you fill out <code>figcaption</code>.</p>
+
+<h3 id="single-image-figure">Single Image Figure</h3>
+
+<figure>
+	<img src="http://farm9.staticflickr.com/8426/7758832526_cc8f681e48_c.jpg" />
+	<figcaption>Morning Fog Emerging From Trees by A Guy Taking Pictures, on Flickr</figcaption>
+</figure>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="code"><pre><span class="nt">&lt;figure&gt;</span>
+	<span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/images/image-filename-1.jpg"</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;figcaption&gt;</span>Caption describing these two images.<span class="nt">&lt;/figcaption&gt;</span>
+<span class="nt">&lt;/figure&gt;</span>
+</pre></td></tr></tbody></table></code></pre></figure>
+:ET

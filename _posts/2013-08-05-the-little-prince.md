@@ -3,6 +3,10 @@ layout: post-no-feature
 title: "Image in Post"
 description: "Once when I was six years old I saw a magniﬁcent picture in a book, called
 True Stories from Nature, about the primeval forest."
+owner: "Owner of the post"
+about: "You can here write about the owners of the post"
+linkdin: "add your linkdin address here"
+ownimage: "avatar.png"
 comments: true
 category: articles
 ---

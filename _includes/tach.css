@@ -1,0 +1,141 @@
+.container:hover .imaging + .centered {
+display: block;
+}
+
+.imag{
+    border-width: 1vw; 
+    border-style: solid; 
+    border-color: transparent;
+}
+
+.container:hover .imag{
+border-color:rgb(19 117 165); 
+border-style: solid;
+border-width: 1vw;
+opacity: 25%;
+transition-duration: 2s;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  color: white;
+}
+
+.achieve{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-left: 2vw;
+    margin-right: 2vw;
+}
+
+.team1{
+    display: grid;
+    grid-template-columns: auto;
+    margin: 22vw;
+    margin-top: 3vw;
+    margin-bottom: 2vw;
+}
+
+.team2{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    padding-bottom: 2vw;
+}
+
+.centered:hover{
+    display: block;
+}
+
+.click{
+    animation: disco 2s infinite;
+}
+
+@keyframes disco{
+    0%{color: red;}
+    25%{color: blue;}
+    50%{color: green;}
+    75%{color: orange;}
+    100%{color: red;}
+}
+
+.chel{
+  width: 200px;
+}
+li{
+  padding: 5px;
+}
+ul{
+  width: 100%;
+  text-align:right;
+}
+body {font-family: 'Montserrat', Georgia, Serif; color: white;}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display";
+  letter-spacing: 5px;
+}
+@media only screen and (max-width: 1065px) {
+  .links{
+    display: none;
+  }
+}
+@media only screen and (min-width: 1065px) {
+  .nav{
+    display: none;
+    }
+  .check{
+    display: none;
+  }
+  .close{
+    display: none;
+    }}
+
+.container {
+}
+.container:hover {
+position: relative;
+transition: 2s;
+}
+
+.homedesp{
+  display: flex;
+}
+
+.hometextmob{
+  display: none;
+}
+
+.homeimgdesp{ 
+  margin-top: 2.75vw;
+  padding-left: 4vw;
+  padding-right: 7.5vw;
+}
+
+@media only screen and (max-width: 800px) {
+
+.hero{
+  padding-top: 15vw;
+}
+.homedesp{
+  display: block;
+}
+
+.hometextlap{
+  display: none;
+}
+
+.hometextmob{
+  display: block;
+  padding-right: 7.5vw;
+}
+
+.homeimgdesp{
+  margin-left: 27.5%;
+  padding: 0em;
+}
+}

@@ -2,6 +2,10 @@
 layout: post
 title: Post and Feature Image
 description: "In my younger and more vulnerable years my father gave me some advice that I’ve been turning over in my mind ever since."
+owner: "Owner of the post"
+about: "You can here write about the owners of the post"
+linkdin: "add your linkdin address here"
+ownimage: "avatar.png"
 category: articles
 tags: [intro, beginner, jekyll, tutorial]
 image:

@@ -4,8 +4,6 @@
 
 <section class="article">
 
-  <div class="overlay overlay-lighter"></div>
-  <div class="featured-image" style="background-image: url({{ site.url }}/images/{{ page.image.feature }})"></div>
 {% else %}
 
 {% include head-dark.html %}
@@ -18,13 +16,13 @@
       <article class="wrap post">
         <header class="post-header">
           <hgroup>
-            <h1>{{page.title}}</h1>
+            <h1 style="font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; ">{{page.title}}</h1>
             <p class="date">{{page.date | date: "%b %d, %Y" }}</p>
-            <p class="intro">{% if page.description %}{{ page.description }}{% else %}{{ page.tagline }}{% endif %}</p>
+            <p class="intro" style="font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; ">{% if page.description %}{{ page.description }}{% else %}{{ page.tagline }}{% endif %}</p>
           </hgroup>
         </header>
-
-        {{ content }}
+        <div style="color: #8C8B88;">
+        {{ content }}</div>
 
       <a class="share" href="https://twitter.com/intent/tweet?text=&quot;{{ page.title }}&quot;%20{{ site.canonical }}{{ page.url }}%20via%20&#64;{{ site.owner.twitter }}" data-dnt="true">Share</a>
       <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
@@ -50,6 +48,18 @@
 
       </article>
     </section>
+</div>
+
+<div style="padding-left: 25vw; padding-right: 25vw; background-color: #BFBDB9; color: white; padding-top: 0.25vw;">
+  <div style="display: grid;grid-template-columns: 10vw 45vw 10vw; padding: 2vw; padding-left: 0vw; ">
+    <div>
+    <img src="../images/{{page.ownimage}}" style="border-radius: 50%" width="75%">
+    </div>
+    <div style="font-size: 1vw;"><h3 style="font-size: 1.5vw; font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;">{{page.owner}}</h3><p style="font-size: 1vw; font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;">{{page.about}}</p></div>
+  <div>
+    <button style="background-color: white; color: blue; border-radius: 25%; box-shadow: none; padding: 1vw; border-color: black; font-size: 1.25vw;"><a href="{{page.linkdin}}"> Follow Me</a></button>
+  </div>
+</div>
 </div>
 
 {% include footer.html %}
