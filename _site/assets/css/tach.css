@@ -139,3 +139,9 @@ transition: 2s;
   padding: 0em;
 }
 }
+@media only screen and (max-width: 600px) {
+  footer{
+    grid-template-rows: 30vw;
+    height: 45vw;
+  }
+}
