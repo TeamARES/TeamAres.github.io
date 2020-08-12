@@ -1,15 +1,15 @@
 ---
 layout: post-light-feature
 title: Introduction to Gazebo
-description: "Portland in shoreditch Vice, labore typewriter pariatur hoodie fap sartorial Austin. Pinterest literally occupy Schlitz forage."
+description: "Getting started with basics of URDF to create you own simulations!"
 owner: "Manan Madan"
-about: "Manan is the Software Lead at Team ARES"
+about: "Manan is the Software Lead at Team ARES."
 linkdin: "https://www.linkedin.com/in/manan-madan-646950167/"
 ownimage: "manan_profile.png"
 categories: articles
 date: 2020-08-12
 image: 
-        feature: soft-trees.jpg
+feature: soft-trees.jpg
 ---
 ## Introduction
 
