@@ -43,8 +43,12 @@ There are certain elements in URDF for describing robot's dynamics.
 I am going to cover a few basic and essential elements.
 
 1. <robot> element
-This is the **root element** in the program. All of the other elements describing robot will be encapsulated within this element.
+
+This is the **root element** in the program. 
+All of the other elements describing robot will be encapsulated within this element.
+
 2. <link> element
+
 The link element describes a **rigid body** in the robot.
 A rigid body in any simulation has 3 properties:
 - Inertial 
@@ -61,6 +65,7 @@ A rigid body in any simulation has 3 properties:
 ```
 
 - Visual Features
+
   - Here you can specify how you rigid body will look
   - Hence here you can specify geometry , like a box , a sphere etc.
   - You can also meshes to give a look to your rigid bodies and it will be specified here only
@@ -79,6 +84,7 @@ A rigid body in any simulation has 3 properties:
 ```
 
 - Collision
+  
   - As the name sounds , this element helps you to specify the collision properties of the rigid body
   - A colision element in a element will be converted into a 3D vector , in order to simplify the computations
   - You can also use multiple collision element for a rigid body
@@ -92,17 +98,23 @@ A rigid body in any simulation has 3 properties:
        </geometry>
   </collision>
 ```
+
 ### Putting it together
 
 - So Uptill now , our code structure will look something like
+   
    - We have a root robot element
    - In that we will have different rigid bodies specified by links
+
 - Overall the follwing picture would be helpful to visualise the structure of a link
+
 - ![link_str](http://wiki.ros.org/urdf/XML/link?action=AttachFile&do=get&target=inertial.png)
 
 - Joint
+
   - This element describes the kinematics and the dynamic of the "joint"
   - **A joint in Gazebo is formed between parent link and the child link**
+
 - A joint can be made as follows in the URDF File
 
 ```
@@ -113,8 +125,11 @@ A rigid body in any simulation has 3 properties:
 ```
 
 - Following picture is good to visualize the point I am saying
-  - ![joint_str](http://wiki.ros.org/urdf/XML/joint?action=AttachFile&do=get&target=joint.png)
+
+ - ![joint_str](http://wiki.ros.org/urdf/XML/joint?action=AttachFile&do=get&target=joint.png)
+
 - Gazebo
+
   - Whatever is written in this element , will not be parsed by xacro
   - Instead it will direcly be used by gazebo
   - It is used to specify simulation properties such as color etc.
