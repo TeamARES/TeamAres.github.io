@@ -42,12 +42,12 @@ Now I will cover more about the different components of URDF files!
 There are certain elements in URDF for describing robot's dynamics.
 I am going to cover a few basic and essential elements.
 
-1. <robot> element
+1. `<robot>` element
 
 This is the **root element** in the program. 
 All of the other elements describing robot will be encapsulated within this element.
 
-2. <link> element
+2. `<link>` element
 
 The link element describes a **rigid body** in the robot.
 A rigid body in any simulation has 3 properties:
