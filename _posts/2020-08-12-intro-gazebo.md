@@ -8,7 +8,7 @@ linkedin: "https://www.linkedin.com/in/manan-madan-646950167/"
 ownimage: "manan_profile.jpeg"
 category: articles
 date: 2020-08-12 
-feature: "https://github.com/OpenPi-bot/robot-simulation/blob/base/base_robot.png"
+comments: true
 ---
 
 ## Introduction
