@@ -7,10 +7,10 @@ about: "Manan is the Software Lead at Team ARES."
 linkedin: "https://www.linkedin.com/in/manan-madan-646950167/"
 ownimage: "manan_profile.jpeg"
 category: articles
-date: 2020-08-12
-image: 
- feature: "https://github.com/OpenPi-bot/robot-simulation/blob/base/base_robot.png"
+date: 2020-08-12 
+feature: "https://github.com/OpenPi-bot/robot-simulation/blob/base/base_robot.png"
 ---
+
 ## Introduction
 
 Gazebo is a great tool that can be used for the simulation of robots. Many people who are new to ROS , often are not able to understand Gazebo properly , and rely on pre-made robots like turtlebot , husky , etc .. 
