@@ -52,7 +52,7 @@ A rigid body in any simulation has 3 properties:
   - You can specify the inertia values and they will be stored in a 3 * 3 rotational inertia matrix
   - Let's now see an example of the code
 
-```xml
+```
   <inertial>
          <origin xyz="0 0 0.5" rpy="0 0 0"/>
          <mass value="1"/>
@@ -65,7 +65,7 @@ A rigid body in any simulation has 3 properties:
   - You can also meshes to give a look to your rigid bodies and it will be specified here only
   - Lets' also see an example of this
 
-```xml
+```
  <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
         <geometry>
@@ -81,7 +81,7 @@ A rigid body in any simulation has 3 properties:
   - A colision element in a element will be converted into a 3D vector , in order to simplify the computations
   - You can also use multiple collision element for a rigid body
   - Let's see an example of this
-```xml
+```
 <collision>
        <origin xyz="0 0 0" rpy="0 0 0"/>
        <geometry>
@@ -101,7 +101,7 @@ A rigid body in any simulation has 3 properties:
   - **A joint in Gazebo is formed between parent link and the child link**
   
   - A joint can be made as follows in the URDF File
-```xml
+```
 <joint name="joint3" type="continuous">
        <parent link="link3"/>
        <child link="link4"/>
@@ -127,7 +127,8 @@ Gazebo has several builtin Plugins to use
 - You can declare them , by just mentioning the body , you want to add functionalities to.
 - Also remember to put them in a <gazebo> tag , as they are specific to gazebo and wont be parsed by xacro
 - You can declare them like
-```xml
+
+```
 <gazebo>
 <plugin name = " " filename = " ">
 </plugin>
@@ -135,10 +136,12 @@ Gazebo has several builtin Plugins to use
 ```
 
 Now you can completely make your robot with sensor's also!
+
 **Note:**
 - In order to launch this robot in gazebo just add robot description parameter in your launch file.
 - Like
-```xml
+
+```
   <param name="robot_description" command="$(find xacro)/xacro.py '$(find fb_description)/urdf/fb.xacro'"/>
 ```
 As an example you can look at the simulation made by us here at Team ARES
