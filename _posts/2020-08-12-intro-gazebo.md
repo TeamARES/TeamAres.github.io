@@ -1,3 +1,4 @@
+
 ---
 layout: post-light-feature
 title: Introduction to Gazebo
@@ -9,7 +10,7 @@ ownimage: "manan_profile.png"
 categories: articles
 date: 2020-08-12
 image: 
-feature: soft-trees.jpg
+ feature: "https://github.com/OpenPi-bot/robot-simulation/blob/base/base_robot.png"
 ---
 ## Introduction
 
