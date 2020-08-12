@@ -1,6 +1,6 @@
 
 ---
-layout: post-light-feature
+layout: post
 title: Introduction to Gazebo
 description: "Getting started with basics of URDF to create you own simulations!"
 owner: "Manan Madan"
