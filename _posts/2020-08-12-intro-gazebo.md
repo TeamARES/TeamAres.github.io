@@ -3,9 +3,9 @@ layout: post-light-feature
 title: Introduction to Gazebo
 description: "Portland in shoreditch Vice, labore typewriter pariatur hoodie fap sartorial Austin. Pinterest literally occupy Schlitz forage."
 owner: "Manan Madan"
-about: "You can here write about the owners of the post"
+about: "Manan is the Software Lead at Team ARES"
 linkdin: "https://www.linkedin.com/in/manan-madan-646950167/"
-ownimage: "avatar.png"
+ownimage: "manan_profile.png"
 categories: articles
 date: 2020-08-12
 image: 
