@@ -15,7 +15,7 @@ comments: true
 
 Gazebo is a great tool that can be used for the simulation of robots. Many people who are new to ROS , often are not able to understand Gazebo properly , and rely on pre-made robots like turtlebot , husky , etc .. 
 These simulations are great! , but if you do not understand atleast the basics , then you will have a hard time figuring out how to add any modification to the robot!
-If you are at this stage , then we are there to help you out!!! :smiley:
+If you are at this stage , then we are there to help you out!!! ![smiley](https://github.githubassets.com/images/icons/emoji/unicode/1f603.png)
 
 So let's dive in!
 
