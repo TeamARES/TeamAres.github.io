@@ -5,7 +5,7 @@ description:"Getting started with basics of URDF to create you own simulations!"
 owner: "Manan Madan"
 about: "Manan is the Software Lead at Team ARES."
 linkedin: "https://www.linkedin.com/in/manan-madan-646950167/"
-ownimage: "manan_profile.jpeg"
+ownimage: manan_profile.jpeg
 category: articles
 date: 2020-08-12
 image: 
