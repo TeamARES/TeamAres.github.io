@@ -1,3 +1,16 @@
+---
+layout: post-light-feature
+title: Introduction to Gazebo
+description: "Portland in shoreditch Vice, labore typewriter pariatur hoodie fap sartorial Austin. Pinterest literally occupy Schlitz forage."
+owner: "Manan Madan"
+about: "You can here write about the owners of the post"
+linkdin: "https://www.linkedin.com/in/manan-madan-646950167/"
+ownimage: "avatar.png"
+categories: articles
+date: 2020-08-12
+image: 
+        feature: soft-trees.jpg
+---
 ## Introduction
 
 Gazebo is a great tool that can be used for the simulation of robots. Many people who are new to ROS , often are not able to understand Gazebo properly , and rely on pre-made robots like turtlebot , husky , etc .. 
