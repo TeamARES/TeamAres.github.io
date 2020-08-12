@@ -40,10 +40,10 @@ Now I will cover more about the different components of URDF files!
 ## URDF Basics:
 
 There are certain elements in URDF for describing robot's dynamics.
-I am going to cover a few basic and essential elements
+I am going to cover a few basic and essential elements.
 
 1. <robot> element
-This is the **root element** in the program. All of the other elements describing robot will be encapsulated within this element
+This is the **root element** in the program. All of the other elements describing robot will be encapsulated within this element.
 2. <link> element
 The link element describes a **rigid body** in the robot.
 A rigid body in any simulation has 3 properties:
@@ -59,6 +59,7 @@ A rigid body in any simulation has 3 properties:
          <inertia ixx="100"  ixy="0"  ixz="0" iyy="100" iyz="0" izz="100" />
   </inertial>
 ```
+
 - Visual Features
   - Here you can specify how you rigid body will look
   - Hence here you can specify geometry , like a box , a sphere etc.
@@ -76,11 +77,13 @@ A rigid body in any simulation has 3 properties:
         </material>
  </visual>
 ```
+
 - Collision
   - As the name sounds , this element helps you to specify the collision properties of the rigid body
   - A colision element in a element will be converted into a 3D vector , in order to simplify the computations
   - You can also use multiple collision element for a rigid body
   - Let's see an example of this
+
 ```
 <collision>
        <origin xyz="0 0 0" rpy="0 0 0"/>
@@ -90,6 +93,7 @@ A rigid body in any simulation has 3 properties:
   </collision>
 ```
 ### Putting it together
+
 - So Uptill now , our code structure will look something like
    - We have a root robot element
    - In that we will have different rigid bodies specified by links
@@ -99,15 +103,16 @@ A rigid body in any simulation has 3 properties:
 - Joint
   - This element describes the kinematics and the dynamic of the "joint"
   - **A joint in Gazebo is formed between parent link and the child link**
-  
-  - A joint can be made as follows in the URDF File
+- A joint can be made as follows in the URDF File
+
 ```
 <joint name="joint3" type="continuous">
        <parent link="link3"/>
        <child link="link4"/>
 </joint>
 ```
-  - Following picture is good to visualize the point I am saying
+
+- Following picture is good to visualize the point I am saying
   - ![joint_str](http://wiki.ros.org/urdf/XML/joint?action=AttachFile&do=get&target=joint.png)
 - Gazebo
   - Whatever is written in this element , will not be parsed by xacro
@@ -144,6 +149,7 @@ Now you can completely make your robot with sensor's also!
 ```
   <param name="robot_description" command="$(find xacro)/xacro.py '$(find fb_description)/urdf/fb.xacro'"/>
 ```
+
 As an example you can look at the simulation made by us here at Team ARES
 - It has a skid drive controller and We have added a realsense camera , IMU etc. sensors to it
 - [Made with :heart: by Team ARES](https://github.com/TeamARES/rover-simulation)
