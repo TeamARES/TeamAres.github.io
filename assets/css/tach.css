@@ -70,10 +70,6 @@ transition-duration: 2s;
 li{
   padding: 5px;
 }
-ul{
-  width: 100%;
-  text-align:right;
-}
 body {font-family: 'Montserrat', Georgia, Serif; color: white;}
 h1, h2, h3, h4, h5, h6 {
   font-family: "Playfair Display";

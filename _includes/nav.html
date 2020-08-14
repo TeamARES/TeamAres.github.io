@@ -4,6 +4,11 @@
 <title>{% if page.title %}{{ page.title }} &#8211; {% endif %}{{ site.title }}</title>
 <meta name="description" content="{{ page.description }}">
 <meta name="keywords" content="{{ page.tags | join: ', ' }}">
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Amatic SC' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Questrial' rel='stylesheet'> 
+<link href='../assets/css/tach.css' rel='stylesheet'>
+<link href='../assets/css/style.css' rel='stylesheet'>
 
 {% include graphs.html %}
 
@@ -18,11 +23,6 @@
 <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Crimson+Text:400,400italic,700,700italic" rel='stylesheet' type='text/css' />
 <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="{{ site.url }}/assets/css/entypo.css" media="all">
-<link href='../assets/css/tach.css' rel='stylesheet'>
-<link href='../assets/css/style.css' rel='stylesheet'>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-
 
 <!-- In order to use Calendas Plus, you must first purchase it. Then, create a font-face package using FontSquirrel.
 <link rel='stylesheet' href='{{ site.url }}/assets/cal.css' media='all' />
@@ -36,6 +36,25 @@
 <!-- Fresh Squeezed jQuery -->
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script type="text/javascript">
+  var t=0;
+  function navopen () {
+    var x = window.matchMedia("(max-width: 1065px)")
+    var navi = document.getElementsByClassName("linking");
+    var navi1 = document.getElementsByClassName("close");
+    var navi2 = document.getElementsByClassName("check");
+    if (t%2==0) {
+    navi[0].style.display="block"
+    navi1[0].src="img/close.png";
+    t++;
+  }
+  else{
+    navi[0].style.display="none"
+    navi1[0].src="img/nav_logo.png";
+    t++;
+  }
+  }
+</script>
 
 <meta http-equiv="cleartype" content="on">
 
@@ -48,7 +67,8 @@
 <link rel="shortcut icon" href="{{ site.url }}/favicon.ico">
 
 <div id="bump">
-  <div style="position: fixed; width: 100%;">
+  <body class="">
+    <div style="position: fixed; width: 100%; z-index: 1;">
 <div style="display: flex; background-color: black; width: 100%;">
 <ul type="none" style="text-align:left;padding:0px;padding-left: 7vw; margin: 0em ;width: 30%;">
   <li style="display: inline-block;padding:0px;padding-left:0.5vw;"><img src="../img/ARES_LOGO - Copy.png" width="60vw" height="60vw"></li>
@@ -64,7 +84,7 @@
   <li style="display: inline-block; "><a  style="color: white; text-decoration: none; font-size: 1.3vw; padding-left: 0.75vw;"><img class="close" src="../img/nav_logo.png" width="40vw" height="40vw"></a></li>
 </ul>
 </div>
-<div class="check">
+<div class="check" style=" z-index: 1;">
   <ul type="none" class="linking" style="margin: 0em; padding-left: 0em; display: none; align-self: flex-end; background-color: rgb(0,0,0,0.5); width: 100%;
   text-align:right;">
   <li><a href="/" style="display: block; color: black; text-decoration: none; font-size: 2.5vw; padding-bottom: 0.75vw;  color: white;">Home</a></li>
@@ -75,6 +95,5 @@
 </div>
 </div>
 <div>
-<div style="background: url(../img/6_2.png) fixed;">
-<img style="background: linear-gradient(-45deg, rgba(148,12,22, 0.60) 0%, rgba(18,22,148, 0.85) 100%), url(../img/6_2.png) no-repeat bottom center fixed;" class="hero" src="../img/hero.png" width="100%" height="90%">
+  .<br>..<br>..<br>..<br>
 </div>
