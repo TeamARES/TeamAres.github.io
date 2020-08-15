@@ -7,7 +7,9 @@ about: "Manan is the Software Lead at Team ARES."
 linkedin: "https://www.linkedin.com/in/manan-madan-646950167/"
 ownimage: "manan_profile.jpeg"
 category: articles
-date: 2020-08-12 
+date: 2020-08-12
+image:
+  feature: "https://farm8.staticflickr.com/7014/6840341477_e49612bc59_o_d.jpg"
 comments: true
 ---
 
