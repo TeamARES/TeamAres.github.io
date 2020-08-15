@@ -9,7 +9,7 @@ ownimage: "manan_profile.jpeg"
 category: articles
 date: 2020-08-12
 image:
-  feature: "https://farm8.staticflickr.com/7014/6840341477_e49612bc59_o_d.jpg"
+  feature: "https://github.com/OpenPi-bot/robot-simulation/blob/base/base_robot.png"
 comments: true
 ---
 
@@ -17,7 +17,7 @@ comments: true
 
 Gazebo is a great tool that can be used for the simulation of robots. Many people who are new to ROS , often are not able to understand Gazebo properly , and rely on pre-made robots like turtlebot , husky , etc .. 
 These simulations are great! , but if you do not understand atleast the basics , then you will have a hard time figuring out how to add any modification to the robot!
-If you are at this stage , then we are there to help you out!!! :smiley:
+If you are at this stage , then we are there to help you out!!! 
 So let's dive in!
 
 ## Basic File Structure:
@@ -109,7 +109,9 @@ A rigid body in any simulation has 3 properties:
 
 - Overall the follwing picture would be helpful to visualise the structure of a link
 
-- ![link_str](http://wiki.ros.org/urdf/XML/link?action=AttachFile&do=get&target=inertial.png)
+
+ ![link_str](http://wiki.ros.org/urdf/XML/link?action=AttachFile&do=get&target=inertial.png)
+ 
 
 - Joint
 
@@ -127,7 +129,7 @@ A rigid body in any simulation has 3 properties:
 
 - Following picture is good to visualize the point I am saying
 
- - ![joint_str](http://wiki.ros.org/urdf/XML/joint?action=AttachFile&do=get&target=joint.png)
+![joint_str](http://wiki.ros.org/urdf/XML/joint?action=AttachFile&do=get&target=joint.png)
 
 - Gazebo
 
@@ -168,4 +170,4 @@ Now you can completely make your robot with sensor's also!
 
 As an example you can look at the simulation made by us here at Team ARES
 - It has a skid drive controller and We have added a realsense camera , IMU etc. sensors to it
-- [Made with :heart: by Team ARES](https://github.com/TeamARES/rover-simulation)
+- [Made with love by Team ARES](https://github.com/TeamARES/rover-simulation)
