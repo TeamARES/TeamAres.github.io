@@ -73,7 +73,6 @@ li{
 body {font-family: 'Montserrat', Georgia, Serif; color: white;}
 h1, h2, h3, h4, h5, h6 {
   font-family: "Playfair Display";
-  letter-spacing: 5px;
 }
 @media only screen and (max-width: 1065px) {
   .links{
