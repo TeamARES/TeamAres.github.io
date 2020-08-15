@@ -3,7 +3,7 @@ layout: post
 title: "Introduction to Gazebo"
 description: "Getting started with basics of URDF to create you own simulations!"
 owner: "Manan Madan"
-about: "Manan is the Software Lead at Team ARES."
+about: "Manan is the Software Lead at Team ARES.He has a keen interest in the feild of Robotics and Artifical Intelligence. His main ares of interest include Path Planning and Computer Vision."
 linkedin: "https://www.linkedin.com/in/manan-madan-646950167/"
 ownimage: "manan_profile.jpeg"
 category: articles
