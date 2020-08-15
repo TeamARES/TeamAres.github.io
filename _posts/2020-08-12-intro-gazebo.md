@@ -9,8 +9,7 @@ ownimage: "manan_profile.jpeg"
 category: articles
 date: 2020-08-12
 image:
-  feature: "https://github.com/OpenPi-bot/robot-simulation/blob/base/base_robot.png"
-comments: true
+  feature: "https://robohub.org/wp-content/uploads/2014/03/Screenshot-from-2014-03-14-07_34_30.png"
 ---
 
 ## Introduction
