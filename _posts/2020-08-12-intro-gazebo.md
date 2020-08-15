@@ -169,4 +169,4 @@ Now you can completely make your robot with sensor's also!
 
 As an example you can look at the simulation made by us here at Team ARES
 - It has a skid drive controller and We have added a realsense camera , IMU etc. sensors to it
-- [Made with love by Team ARES](https://github.com/TeamARES/rover-simulation)
+- [Made with &#9829; by Team ARES](https://github.com/TeamARES/rover-simulation)
