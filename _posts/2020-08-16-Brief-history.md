@@ -12,7 +12,7 @@ category: articles
 tags: [rovers, USSR, NASA, USA]
 date: 2020-08-16
 image:
-  feature: ""
+  feature: "https://robohub.org/wp-content/uploads/2014/03/Screenshot-from-2014-03-14-07_34_30.png"
 ---
 
 # Brief History of MARS Space Programs
