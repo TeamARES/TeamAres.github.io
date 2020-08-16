@@ -1,18 +1,18 @@
 ---
 layout: post
-title: "Introduction to Gazebo"
-description: "Getting started with basics of URDF to create you own simulations!"
-owner: "Manan Madan"
-about: "Manan is the Software Lead at Team ARES.He has a keen interest in the feild of Robotics and Artifical Intelligence. His main ares of interest include Path Planning and Computer Vision."
-linkdin: "https://www.linkedin.com/in/manan-madan-646950167/"
+title: "Brief History of Mars Exploration"
+description: "Rapid Exploration of MARS"
+owner: "Mayank Pandit"
+about: "Mayank is Team Lead at ARES Robotics. His insterest covers CAD and CAM designs and Suspesnion system. He is also learning ROS and openCV for obstacle detection."
+linkdin: "https://www.linkedin.com/in/mayank-pandit-516494a8/"
 facebook: "facebook link"
 instagram: "instgram link"
 ownimage: "manan_profile.jpeg"
 category: articles
-tags: [intro, beginner, Gazebo,tutorial ,URDF ,simulation ,robotics]
-date: 2020-08-12
+tags: [rovers, USSR, NASA, USA]
+date: 2020-08-16
 image:
-  feature: "https://robohub.org/wp-content/uploads/2014/03/Screenshot-from-2014-03-14-07_34_30.png"
+  feature: ""
 ---
 
 ## Introduction
