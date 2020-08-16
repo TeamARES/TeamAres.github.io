@@ -9,6 +9,7 @@ facebook: "facebook link"
 instagram: "instgram link"
 ownimage: "manan_profile.jpeg"
 category: articles
+tags: [intro, beginner, Gazebo,tutorial ,URDF ,simulation ,robotics]
 date: 2020-08-12
 image:
   feature: "https://robohub.org/wp-content/uploads/2014/03/Screenshot-from-2014-03-14-07_34_30.png"
