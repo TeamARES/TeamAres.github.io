@@ -7,7 +7,7 @@ about: "Mayank is Team Lead at ARES Robotics. His insterest covers CAD and CAM d
 linkdin: "https://www.linkedin.com/in/mayank-pandit-516494a8/"
 facebook: "facebook link"
 instagram: "instgram link"
-ownimage: "manan_profile.jpeg"
+ownimage: "Mayank-profile.jpg"
 category: articles
 tags: [rovers, USSR, NASA, USA]
 date: 2020-08-16
