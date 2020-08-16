@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Brief History of Mars Exploration"
-description: "Rapid Exploration of MARS"
+description: "Curiosity leads to each and every ivention, innovation and exploration"
 owner: "Mayank Pandit"
 about: "Mayank is Team Lead at ARES Robotics. His insterest covers CAD and CAM designs and Suspesnion system. He is also learning ROS and openCV for obstacle detection."
 linkdin: "https://www.linkedin.com/in/mayank-pandit-516494a8/"
