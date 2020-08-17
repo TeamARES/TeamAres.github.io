@@ -1,4 +1,20 @@
-{% include head.html %}
+{% include nav.html %}
+
+<section class="article">
+
+  {% if page.image.feature %}
+  <div class="overlay"></div>
+  {% if page.image.feature contains 'https://' | escape or page.image.feature contains 'http://' | escape %}
+  <div class="featured-image" style="background-image: url({{ page.image.feature }})"></div>
+  {% else %}
+  <div class="featured-image" style="background-image: url({{ site.url }}/images/{{ page.image.feature }})"></div>
+  {% endif %}
+{% else %}
+  <div class="overlay"></div>
+  <div class="featured-image" style="background-image: url({{ site.url }}/images/feahero.png)"></div>
+{% endif %}
+
+<section class="article pad-top">
       <article class="wrap post">
         <header class="post-header">
           <hgroup>
@@ -38,4 +54,21 @@
     </section>
 </div>
 
+
+<div style="padding-left: 25vw; padding-right: 25vw; color: white; padding-top: 0.25vw;">
+  <div style="display: grid;grid-template-columns: 10vw 35vw; padding: 2vw; padding-left: 2vw; background-color: #636362; ">
+    <div>
+    <img src="../images/{{page.ownimage}}" style="border-radius: 50%" width="75%">
+    </div>
+    <div style="font-size: 1vw;"><h3 style="font-size: 1.5vw; font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;  margin-bottom: 0.25vw;">{{page.owner}}</h3><p style="font-size: 1vw; font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;">{{page.about}}</p><a href="{{page.linkdin}}" style="color: white;"><i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i>
+</a> <a href="{{page.facebook}}" style="color: white; padding-left: 0.5vw;"><i class="fa fa-facebook-square fa-3x" aria-hidden="true"></i>
+</a> <a href="{{page.instagram}}" style="color: white; padding-left: 0.5vw;"><i class="fa fa-instagram fa-3x" aria-hidden="true"></i>
+</a></div>
+  <div>
+  </div>
+</div>
+</div>
+
 {% include footer.html %}
+
+

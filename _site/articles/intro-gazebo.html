@@ -1,0 +1,405 @@
+
+<!doctype html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+<meta charset="utf-8">
+<title>Introduction to Gazebo &#8211; Team ARES</title>
+<meta name="description" content="Getting started with basics of URDF to create you own simulations!">
+<meta name="keywords" content="">
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Amatic SC' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Questrial' rel='stylesheet'> 
+<link href='../assets/css/tach.css' rel='stylesheet'>
+<link href='../assets/css/style.css' rel='stylesheet'>
+
+<!-- DSLs for various open graph languages -->
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Introduction to Gazebo &#8211; Team ARES">
+<meta property="og:description" content="Getting started with basics of URDF to create you own simulations!">
+<meta property="og:url" content="http://localhost:4000/articles/intro-gazebo">
+<meta property="og:site_name" content="Team ARES">
+
+
+
+
+
+<link href="http://localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="Team ARES Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Type -->
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Crimson+Text:400,400italic,700,700italic" rel='stylesheet' type='text/css' />
+<link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="http://localhost:4000/assets/css/entypo.css" media="all">
+
+<!-- In order to use Calendas Plus, you must first purchase it. Then, create a font-face package using FontSquirrel.
+<link rel='stylesheet' href='http://localhost:4000/assets/cal.css' media='all' />
+-->
+
+
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="http://localhost:4000/assets/css/i.css">
+
+<!-- Fresh Squeezed jQuery -->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script type="text/javascript">
+  var t=0;
+  function navopen () {
+    var x = window.matchMedia("(max-width: 1065px)")
+    var navi = document.getElementsByClassName("linking");
+    var navi1 = document.getElementsByClassName("close");
+    var navi2 = document.getElementsByClassName("check");
+    if (t%2==0) {
+    navi[0].style.display="block"
+    navi1[0].src="img/close.png";
+    t++;
+  }
+  else{
+    navi[0].style.display="none"
+    navi1[0].src="img/nav_logo.png";
+    t++;
+  }
+  }
+</script>
+
+<meta http-equiv="cleartype" content="on">
+
+<!-- Load Modernizr -->
+<script src="http://localhost:4000/assets/js/vendor/modernizr-2.6.2.custom.min.js"></script>
+
+
+<!-- Icons -->
+<!-- 16x16 -->
+<link rel="shortcut icon" href="http://localhost:4000/favicon.ico">
+
+<div id="bump">
+  <body class="">
+    <div style="position: fixed; width: 100%; z-index: 1;">
+<div style="display: flex; background-color: black; width: 100%;">
+<ul type="none" style="text-align:left;padding:0px;padding-left: 7vw; margin: 0em ;width: 30%;">
+  <li style="display: inline-block;padding:0px;padding-left:0.5vw;"><img src="../img/ARES_LOGO - Copy.png" width="60vw" height="60vw"></li>
+</ul>
+  <ul type="none" class="links" style="margin-top: 1vw;padding-right:7.5vw; width: 100%;
+  text-align:right;">
+  <li style="display: inline-block;"><a href="/" style="color: white; text-decoration: none; font-size: 1.3vw; padding-left: 0.75vw;">Home</a></li>
+  <li style="display: inline-block;"><a href="#home5" style="color: white; text-decoration: none; font-size: 1.3vw; padding-left: 0.75vw;">Website</a></li>
+  <li style="display: inline-block;"><a href="/about/index.html" style="color: white; text-decoration: none; font-size: 1.3vw; padding-left: 0.75vw;">About Us</a></li>
+  <li style="display: inline-block;"><a href="#home6" style="color: white; text-decoration: none; font-size: 1.3vw; padding-left: 0.75vw;">Contact Us</a></li>
+</ul>
+ <ul type="none" class="nav" style="margin: 1vw;padding-right:0.5em;" onclick="navopen()">
+  <li style="display: inline-block; "><a  style="color: white; text-decoration: none; font-size: 1.3vw; padding-left: 0.75vw;"><img class="close" src="../img/nav_logo.png" width="40vw" height="40vw"></a></li>
+</ul>
+</div>
+<div class="check" style=" z-index: 1;">
+  <ul type="none" class="linking" style="margin: 0em; padding-left: 0em; display: none; align-self: flex-end; background-color: rgb(0,0,0,0.5); width: 100%;
+  text-align:right;">
+  <li><a href="/" style="display: block; color: black; text-decoration: none; font-size: 2.5vw; padding-bottom: 0.75vw;  color: white;">Home</a></li>
+  <li><a href="#home5" style="display: block; color: black; text-decoration: none; font-size: 2.5vw; padding-bottom: 0.75vw;  color: white;">Website</a></li>
+  <li><a href="/about/index.html" style="display: block; color: black; text-decoration: none; font-size: 2.5vw; padding-bottom: 0.75vw;  color: white;">About Us</a></li>
+  <li><a href="#home6" style="display: block; color: black; text-decoration: none; font-size: 2.5vw; padding-bottom: 0.75vw;  color: white;">Contact Us</a></li>
+  </ul>
+</div>
+</div>
+<div>
+  .<br>..<br>..<br>..<br>
+</div>
+
+<section class="article pad-top">
+
+
+      <article class="wrap post">
+        <header class="post-header">
+          <hgroup>
+            <h1 style="font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;">Introduction to Gazebo</h1>
+            <p class="date">Aug 12, 2020</p>
+            <p class="intro" style="font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;">Getting started with basics of URDF to create you own simulations!</p>
+          </hgroup>
+        </header>
+
+        <div style="color: #8C8B88;">
+        <h2 id="introduction">Introduction</h2>
+
+<p>Gazebo is a great tool that can be used for the simulation of robots. Many people who are new to ROS , often are not able to understand Gazebo properly , and rely on pre-made robots like turtlebot , husky , etc .. 
+These simulations are great! , but if you do not understand atleast the basics , then you will have a hard time figuring out how to add any modification to the robot!
+If you are at this stage , then we are there to help you out!!! :smiley:
+So let’s dive in!</p>
+
+<h2 id="basic-file-structure">Basic File Structure:</h2>
+
+<p>We are going to use the URDF format for specifying all of our robot elements.
+There is a long ongoing debate on wheather it is good to use the SDF or the URDF format for robot simulations!.
+But since husky , turtlebot simulators use URDF file to specify robot elements , we are going to do the same.
+<strong>Note apart for the URDF files that have the .xacro extension , you might see some file with .gazebo format which we will talk about later in this blog</strong></p>
+
+<p><strong>More about URDF</strong></p>
+
+<p>URDF stands for The Unified Robotic Description Format (URDF). It is an XML file format used in ROS to describe all elements of a robot.</p>
+
+<p>We will use xacro for writing our URDF files.</p>
+
+<ul>
+  <li><em>What is xacro ??</em>
+    <ul>
+      <li>Xacro (XML Macros) Xacro is an XML macro language. With xacro, you can construct shorter and more readable XML files by using macros that expand to larger XML expressions.</li>
+    </ul>
+  </li>
+</ul>
+
+<p>Now I will cover more about the different components of URDF files!</p>
+
+<h2 id="urdf-basics">URDF Basics:</h2>
+
+<p>There are certain elements in URDF for describing robot’s dynamics.
+I am going to cover a few basic and essential elements.</p>
+
+<ol>
+  <li><code>&lt;robot&gt;</code> element</li>
+</ol>
+
+<p>This is the <strong>root element</strong> in the program. 
+All of the other elements describing robot will be encapsulated within this element.</p>
+
+<ol>
+  <li><code>&lt;link&gt;</code> element</li>
+</ol>
+
+<p>The link element describes a <strong>rigid body</strong> in the robot.
+A rigid body in any simulation has 3 properties:</p>
+<ul>
+  <li>Inertial
+    <ul>
+      <li>Here you can specify the mass of the link</li>
+      <li>You can specify the inertia values and they will be stored in a 3 * 3 rotational inertia matrix</li>
+      <li>Let’s now see an example of the code</li>
+    </ul>
+  </li>
+</ul>
+
+<pre><code>  &lt;inertial&gt;
+         &lt;origin xyz="0 0 0.5" rpy="0 0 0"/&gt;
+         &lt;mass value="1"/&gt;
+         &lt;inertia ixx="100"  ixy="0"  ixz="0" iyy="100" iyz="0" izz="100" /&gt;
+  &lt;/inertial&gt;
+</code></pre>
+
+<ul>
+  <li>
+    <p>Visual Features</p>
+
+    <ul>
+      <li>Here you can specify how you rigid body will look</li>
+      <li>Hence here you can specify geometry , like a box , a sphere etc.</li>
+      <li>You can also meshes to give a look to your rigid bodies and it will be specified here only</li>
+      <li>Lets’ also see an example of this</li>
+    </ul>
+  </li>
+</ul>
+
+<pre><code> &lt;visual&gt;
+      &lt;origin xyz="0 0 0" rpy="0 0 0" /&gt;
+        &lt;geometry&gt;
+          &lt;box size="1 1 1" /&gt;
+        &lt;/geometry&gt;
+        &lt;material name="Cyan"&gt;
+          &lt;color rgba="0 1.0 1.0 1.0"/&gt;
+        &lt;/material&gt;
+ &lt;/visual&gt;
+</code></pre>
+
+<ul>
+  <li>
+    <p>Collision</p>
+
+    <ul>
+      <li>As the name sounds , this element helps you to specify the collision properties of the rigid body</li>
+      <li>A colision element in a element will be converted into a 3D vector , in order to simplify the computations</li>
+      <li>You can also use multiple collision element for a rigid body</li>
+      <li>Let’s see an example of this</li>
+    </ul>
+  </li>
+</ul>
+
+<pre><code>&lt;collision&gt;
+       &lt;origin xyz="0 0 0" rpy="0 0 0"/&gt;
+       &lt;geometry&gt;
+        &lt;cylinder radius="1" length="0.5"/&gt;
+       &lt;/geometry&gt;
+  &lt;/collision&gt;
+</code></pre>
+
+<h3 id="putting-it-together">Putting it together</h3>
+
+<ul>
+  <li>
+    <p>So Uptill now , our code structure will look something like</p>
+
+    <ul>
+      <li>We have a root robot element</li>
+      <li>In that we will have different rigid bodies specified by links</li>
+    </ul>
+  </li>
+  <li>
+    <p>Overall the follwing picture would be helpful to visualise the structure of a link</p>
+  </li>
+  <li>
+    <p><img src="http://wiki.ros.org/urdf/XML/link?action=AttachFile&amp;do=get&amp;target=inertial.png" alt="link_str" /></p>
+  </li>
+  <li>
+    <p>Joint</p>
+
+    <ul>
+      <li>This element describes the kinematics and the dynamic of the “joint”</li>
+      <li><strong>A joint in Gazebo is formed between parent link and the child link</strong></li>
+    </ul>
+  </li>
+  <li>
+    <p>A joint can be made as follows in the URDF File</p>
+  </li>
+</ul>
+
+<pre><code>&lt;joint name="joint3" type="continuous"&gt;
+       &lt;parent link="link3"/&gt;
+       &lt;child link="link4"/&gt;
+&lt;/joint&gt;
+</code></pre>
+
+<ul>
+  <li>
+    <p>Following picture is good to visualize the point I am saying</p>
+  </li>
+  <li>
+    <p><img src="http://wiki.ros.org/urdf/XML/joint?action=AttachFile&amp;do=get&amp;target=joint.png" alt="joint_str" /></p>
+  </li>
+  <li>
+    <p>Gazebo</p>
+
+    <ul>
+      <li>Whatever is written in this element , will not be parsed by xacro</li>
+      <li>Instead it will direcly be used by gazebo</li>
+      <li>It is used to specify simulation properties such as color etc.</li>
+      <li>Generally , these elements are store in the file with extension .gazebo that I told you about in the file structure module</li>
+    </ul>
+  </li>
+</ul>
+
+<p>These elements are enough to get you started !
+You will be able to now construct anything you want to make in Gazebo!
+If you are anything like me , you will be probably asking , that these are just rigid bodies , but how to add functonalities to them?</p>
+
+<p>Then ans is <strong>Plugins!</strong></p>
+
+<p>Gazebo has several builtin Plugins to use</p>
+<ul>
+  <li>For example range plugin for the range sensor</li>
+  <li>Diff drive plugin for the diff drive controller</li>
+  <li>You can declare them , by just mentioning the body , you want to add functionalities to.</li>
+  <li>Also remember to put them in a <gazebo> tag , as they are specific to gazebo and wont be parsed by xacro</gazebo></li>
+  <li>You can declare them like</li>
+</ul>
+
+<pre><code>&lt;gazebo&gt;
+&lt;plugin name = " " filename = " "&gt;
+&lt;/plugin&gt;
+&lt;/gazebo&gt;
+</code></pre>
+
+<p>Now you can completely make your robot with sensor’s also!</p>
+
+<p><strong>Note:</strong></p>
+<ul>
+  <li>In order to launch this robot in gazebo just add robot description parameter in your launch file.</li>
+  <li>Like</li>
+</ul>
+
+<pre><code>  &lt;param name="robot_description" command="$(find xacro)/xacro.py '$(find fb_description)/urdf/fb.xacro'"/&gt;
+</code></pre>
+
+<p>As an example you can look at the simulation made by us here at Team ARES</p>
+<ul>
+  <li>It has a skid drive controller and We have added a realsense camera , IMU etc. sensors to it</li>
+  <li><a href="https://github.com/TeamARES/rover-simulation">Made with :heart: by Team ARES</a></li>
+</ul>
+</div>
+
+      <a class="share" href="https://twitter.com/intent/tweet?text=&quot;Introduction to Gazebo&quot;%20http://jekyll.gtat.me/articles/intro-gazebo%20via%20&#64;" data-dnt="true">Share</a>
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+      
+      <aside class="disqus">
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+            /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+            var disqus_shortname = ''; // required: replace example with your forum shortname
+
+            /* * * DON'T EDIT BELOW THIS LINE * * */
+            (function() {
+                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+      </aside>
+      
+
+      </article>
+    </section>
+</div>
+
+<div style="padding-left: 25vw; padding-right: 25vw; color: white; padding-top: 0.25vw;">
+  <div style="display: grid;grid-template-columns: 10vw 45vw 10vw; padding: 2vw; padding-left: 2vw; background-color: #636362; ">
+    <div>
+    <img src="../images/manan_profile.jpeg" style="border-radius: 50%" width="75%">
+    </div>
+    <div style="font-size: 1vw;"><h3 style="font-size: 1.5vw; font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;">Manan Madan</h3><p style="font-size: 1vw; font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;">Manan is the Software Lead at Team ARES.</p></div>
+  <div>
+  </div>
+</div>
+</div>
+</div>
+
+  <footer style="display: grid; grid-template-columns: 30vw 30vw 30vw; padding: 5vw; color: white; font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;" id="home6">
+  	<ol style="list-style: none; line-height: 1.5em;">
+  		<li>
+  		<a style="color: white;" href="../">Home</a>
+  		</li>
+  		<li>
+  		<a style="color: white;" href="../">About Us</a>
+  		</li>
+  		<li>
+  		<a style="color: white;" href="../">Website</a>
+  		</li>
+  		<li>
+  		<a style="color: white;" href="../">Contact Us</a>
+  		</li>
+  	</ol>
+  	<div>
+  		<img src="../img/aresfulllogo.png" width="55%">
+  		<ol style="list-style: none; padding-top: 2vw;">
+  			<li style="display: inline-block; width: 13%; padding: 0.25vw;"> <img src="../img/instagramlogo2.png" width="100%"></li>
+  			<li style="display: inline-block; width: 13%; padding: 0.25vw;"> <img src="../img/linkedinlogo.png" width="100%"></li>
+  			<li style="display: inline-block; width: 13%; padding: 0.25vw;"> <img src="../img/youtubelogo.png" width="100%"></li>
+  		</ol>
+  	</div>
+  	<div>
+  		Contact adresss:<br><br><i class="fa fa-envelope" aria-hidden="true"></i>
+teamaresnsit@gmail.com<br><br>
+<i class="fa fa-phone" aria-hidden="true"></i> 
+ 
+Devansh Batra :
++91 - 8930485111<br><br>
+<i class="fa fa-phone" aria-hidden="true"></i> 
+Nishant Chahar :
++91 - 8130624192<br><br>
+<i class="fa fa-map-marker" aria-hidden="true"></i>  
+ARES Robotics, Dwarka Sector-3, Dwarka, Delhi, 110078 - 576104
+  	</div>
+  </footer>
+  </body>
+</html>
+

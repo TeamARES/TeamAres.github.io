@@ -5,7 +5,7 @@
 <generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://localhost:4000/feed.xml" />
 <link rel="alternate" type="text/html" href="http://localhost:4000" />
-<updated>2020-08-02T10:02:09+00:00</updated>
+<updated>2020-08-14T18:55:32+00:00</updated>
 <id>http://localhost:4000/</id>
 <author>
   <name>Team ARES</name>
@@ -15,22 +15,220 @@
 
 
 <entry>
-  <title type="html"><![CDATA[Test Post]]></title>
-  <link rel="alternate" type="text/html" href="http://localhost:4000/articles/test-post" />
-  <id>http://localhost:4000/articles/test-post</id>
-  <published>2013-08-17T00:00:00+00:00</published>
-  <updated>2013-08-17T00:00:00+00:00</updated>
+  <title type="html"><![CDATA[Introduction to Gazebo]]></title>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/articles/intro-gazebo" />
+  <id>http://localhost:4000/articles/intro-gazebo</id>
+  <published>2020-08-12T00:00:00+00:00</published>
+  <updated>2020-08-12T00:00:00+00:00</updated>
   <author>
     <name>Team ARES</name>
     <uri>http://localhost:4000</uri>
     <email>nilayshrivastava1729@gmail.com</email>
   </author>
-  <content type="html">&lt;p&gt;Shoreditch bicycle rights anim, flexitarian laboris put a bird on it vinyl cupidatat narwhal. Hashtag artisan skateboard, flannel Bushwick nesciunt salvia aute fixie do plaid post-ironic dolor McSweeney’s. Cliche pour-over chambray nulla four loko skateboard sapiente hashtag.&lt;/p&gt;
+  <content type="html">&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
 
-&lt;p&gt;Vero laborum commodo occupy. Semiotics voluptate mumblecore pug. Cosby sweater ullamco quinoa ennui assumenda, sapiente occupy delectus lo-fi. Ea fashion axe Marfa cillum aliquip. Retro Bushwick keytar cliche. Before they sold out sustainable gastropub Marfa readymade, ethical Williamsburg skateboard brunch qui consectetur gentrify semiotics. Mustache cillum irony, fingerstache magna pour-over keffiyeh tousled selfies.&lt;/p&gt;
+&lt;p&gt;Gazebo is a great tool that can be used for the simulation of robots. Many people who are new to ROS , often are not able to understand Gazebo properly , and rely on pre-made robots like turtlebot , husky , etc .. 
+These simulations are great! , but if you do not understand atleast the basics , then you will have a hard time figuring out how to add any modification to the robot!
+If you are at this stage , then we are there to help you out!!! :smiley:
+So let’s dive in!&lt;/p&gt;
 
+&lt;h2 id=&quot;basic-file-structure&quot;&gt;Basic File Structure:&lt;/h2&gt;
 
-  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/articles/test-post&quot;&gt;Test Post&lt;/a&gt; was originally published by Team ARES at &lt;a href=&quot;http://localhost:4000&quot;&gt;Team ARES&lt;/a&gt; on August 17, 2013.&lt;/p&gt;</content>
+&lt;p&gt;We are going to use the URDF format for specifying all of our robot elements.
+There is a long ongoing debate on wheather it is good to use the SDF or the URDF format for robot simulations!.
+But since husky , turtlebot simulators use URDF file to specify robot elements , we are going to do the same.
+&lt;strong&gt;Note apart for the URDF files that have the .xacro extension , you might see some file with .gazebo format which we will talk about later in this blog&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;More about URDF&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;URDF stands for The Unified Robotic Description Format (URDF). It is an XML file format used in ROS to describe all elements of a robot.&lt;/p&gt;
+
+&lt;p&gt;We will use xacro for writing our URDF files.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;em&gt;What is xacro ??&lt;/em&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Xacro (XML Macros) Xacro is an XML macro language. With xacro, you can construct shorter and more readable XML files by using macros that expand to larger XML expressions.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Now I will cover more about the different components of URDF files!&lt;/p&gt;
+
+&lt;h2 id=&quot;urdf-basics&quot;&gt;URDF Basics:&lt;/h2&gt;
+
+&lt;p&gt;There are certain elements in URDF for describing robot’s dynamics.
+I am going to cover a few basic and essential elements.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;code&gt;&amp;lt;robot&amp;gt;&lt;/code&gt; element&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;This is the &lt;strong&gt;root element&lt;/strong&gt; in the program. 
+All of the other elements describing robot will be encapsulated within this element.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;code&gt;&amp;lt;link&amp;gt;&lt;/code&gt; element&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;The link element describes a &lt;strong&gt;rigid body&lt;/strong&gt; in the robot.
+A rigid body in any simulation has 3 properties:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Inertial
+    &lt;ul&gt;
+      &lt;li&gt;Here you can specify the mass of the link&lt;/li&gt;
+      &lt;li&gt;You can specify the inertia values and they will be stored in a 3 * 3 rotational inertia matrix&lt;/li&gt;
+      &lt;li&gt;Let’s now see an example of the code&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code&gt;  &amp;lt;inertial&amp;gt;
+         &amp;lt;origin xyz=&quot;0 0 0.5&quot; rpy=&quot;0 0 0&quot;/&amp;gt;
+         &amp;lt;mass value=&quot;1&quot;/&amp;gt;
+         &amp;lt;inertia ixx=&quot;100&quot;  ixy=&quot;0&quot;  ixz=&quot;0&quot; iyy=&quot;100&quot; iyz=&quot;0&quot; izz=&quot;100&quot; /&amp;gt;
+  &amp;lt;/inertial&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Visual Features&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;Here you can specify how you rigid body will look&lt;/li&gt;
+      &lt;li&gt;Hence here you can specify geometry , like a box , a sphere etc.&lt;/li&gt;
+      &lt;li&gt;You can also meshes to give a look to your rigid bodies and it will be specified here only&lt;/li&gt;
+      &lt;li&gt;Lets’ also see an example of this&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code&gt; &amp;lt;visual&amp;gt;
+      &amp;lt;origin xyz=&quot;0 0 0&quot; rpy=&quot;0 0 0&quot; /&amp;gt;
+        &amp;lt;geometry&amp;gt;
+          &amp;lt;box size=&quot;1 1 1&quot; /&amp;gt;
+        &amp;lt;/geometry&amp;gt;
+        &amp;lt;material name=&quot;Cyan&quot;&amp;gt;
+          &amp;lt;color rgba=&quot;0 1.0 1.0 1.0&quot;/&amp;gt;
+        &amp;lt;/material&amp;gt;
+ &amp;lt;/visual&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Collision&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;As the name sounds , this element helps you to specify the collision properties of the rigid body&lt;/li&gt;
+      &lt;li&gt;A colision element in a element will be converted into a 3D vector , in order to simplify the computations&lt;/li&gt;
+      &lt;li&gt;You can also use multiple collision element for a rigid body&lt;/li&gt;
+      &lt;li&gt;Let’s see an example of this&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;collision&amp;gt;
+       &amp;lt;origin xyz=&quot;0 0 0&quot; rpy=&quot;0 0 0&quot;/&amp;gt;
+       &amp;lt;geometry&amp;gt;
+        &amp;lt;cylinder radius=&quot;1&quot; length=&quot;0.5&quot;/&amp;gt;
+       &amp;lt;/geometry&amp;gt;
+  &amp;lt;/collision&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;putting-it-together&quot;&gt;Putting it together&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;So Uptill now , our code structure will look something like&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;We have a root robot element&lt;/li&gt;
+      &lt;li&gt;In that we will have different rigid bodies specified by links&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Overall the follwing picture would be helpful to visualise the structure of a link&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;img src=&quot;http://wiki.ros.org/urdf/XML/link?action=AttachFile&amp;amp;do=get&amp;amp;target=inertial.png&quot; alt=&quot;link_str&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Joint&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;This element describes the kinematics and the dynamic of the “joint”&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;A joint in Gazebo is formed between parent link and the child link&lt;/strong&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;A joint can be made as follows in the URDF File&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;joint name=&quot;joint3&quot; type=&quot;continuous&quot;&amp;gt;
+       &amp;lt;parent link=&quot;link3&quot;/&amp;gt;
+       &amp;lt;child link=&quot;link4&quot;/&amp;gt;
+&amp;lt;/joint&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Following picture is good to visualize the point I am saying&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;img src=&quot;http://wiki.ros.org/urdf/XML/joint?action=AttachFile&amp;amp;do=get&amp;amp;target=joint.png&quot; alt=&quot;joint_str&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Gazebo&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;Whatever is written in this element , will not be parsed by xacro&lt;/li&gt;
+      &lt;li&gt;Instead it will direcly be used by gazebo&lt;/li&gt;
+      &lt;li&gt;It is used to specify simulation properties such as color etc.&lt;/li&gt;
+      &lt;li&gt;Generally , these elements are store in the file with extension .gazebo that I told you about in the file structure module&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;These elements are enough to get you started !
+You will be able to now construct anything you want to make in Gazebo!
+If you are anything like me , you will be probably asking , that these are just rigid bodies , but how to add functonalities to them?&lt;/p&gt;
+
+&lt;p&gt;Then ans is &lt;strong&gt;Plugins!&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Gazebo has several builtin Plugins to use&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;For example range plugin for the range sensor&lt;/li&gt;
+  &lt;li&gt;Diff drive plugin for the diff drive controller&lt;/li&gt;
+  &lt;li&gt;You can declare them , by just mentioning the body , you want to add functionalities to.&lt;/li&gt;
+  &lt;li&gt;Also remember to put them in a &lt;gazebo&gt; tag , as they are specific to gazebo and wont be parsed by xacro&lt;/gazebo&gt;&lt;/li&gt;
+  &lt;li&gt;You can declare them like&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;gazebo&amp;gt;
+&amp;lt;plugin name = &quot; &quot; filename = &quot; &quot;&amp;gt;
+&amp;lt;/plugin&amp;gt;
+&amp;lt;/gazebo&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Now you can completely make your robot with sensor’s also!&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;In order to launch this robot in gazebo just add robot description parameter in your launch file.&lt;/li&gt;
+  &lt;li&gt;Like&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code&gt;  &amp;lt;param name=&quot;robot_description&quot; command=&quot;$(find xacro)/xacro.py '$(find fb_description)/urdf/fb.xacro'&quot;/&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;As an example you can look at the simulation made by us here at Team ARES&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;It has a skid drive controller and We have added a realsense camera , IMU etc. sensors to it&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/TeamARES/rover-simulation&quot;&gt;Made with :heart: by Team ARES&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/articles/intro-gazebo&quot;&gt;Introduction to Gazebo&lt;/a&gt; was originally published by Team ARES at &lt;a href=&quot;http://localhost:4000&quot;&gt;Team ARES&lt;/a&gt; on August 12, 2020.&lt;/p&gt;</content>
 </entry>
 
 
