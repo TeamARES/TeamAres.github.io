@@ -72,7 +72,7 @@ Today, there are more spacecraft operating at Mars than any planet besides Earth
 
 
 ---
-##  **Concepts for Mars Sample Return** 
+## **Concepts for Mars Sample Return** 
 
  Mars Sample Return is a series of missions by NASA and the European Space Agency to return samples from Mars’ surface to Earth by 2031. Despite advances in space technology, certain science questions—including whether or not a Mars rock sample contains signs of ancient life—can only be answered in Earth-based laboratories.
 
