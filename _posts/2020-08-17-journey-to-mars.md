@@ -7,7 +7,7 @@ About: "Gaurav is a Mechanical Lead at Team ARES.He has a keen interest in the f
 linkedin: "https://www.linkedin.com/in/gaurav-verma-93b6b2119"
 facebook: "facebook link"
 instagram: "instagram link"
-ownimage: "profile image"
+ownimage: "gaurav-profile.JPG"
 category: articles
 tags: [marsmission, mars, rover, journeytomars, marsrover, ]
 date: 2020-08-17
