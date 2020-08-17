@@ -7,7 +7,7 @@ about: "Manan is the Software Lead at Team ARES.He has a keen interest in the fe
 linkdin: "https://www.linkedin.com/in/manan-madan-646950167/"
 facebook: "facebook link"
 instagram: "instgram link"
-ownimage: "manan_profile.jpeg"
+ownimage: "pranav_profile.jpeg"
 category: articles
 tags: [intro, beginner, Gazebo,tutorial ,URDF ,simulation ,robotics]
 date: 2020-08-12
