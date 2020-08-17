@@ -38,7 +38,7 @@ Today, there are more spacecraft operating at Mars than any planet besides Earth
 
 
 ---
-*   **Mars Exploration Rovers**
+## **Mars Exploration Rovers**
 
  In January 2004, two robotic geologists named Spirit and Opportunity landed on opposite sides of the red planet. With data from the rovers, mission scientists have reconstructed an ancient past when Mars was awash in water. Spirit and Opportunity each found evidence for past wet conditions that possibly could have supported microbial life.
 
