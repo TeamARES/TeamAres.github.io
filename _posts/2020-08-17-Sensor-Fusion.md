@@ -1,14 +1,14 @@
 ---
 layout: post-no-feature
-title:"Sensor Fusion and Localization"
+title: "Sensor Fusion and Localization"
 desciption: "Introduction to Sensor Fusion using Kalman Filters!"
-Owner:"Harsh Gupta"
-about:"Harsh is the software lead at Team ARES. He has a knack for competitive programming, machine and deep learning and robotics."
+Owner: "Harsh Gupta"
+about: "Harsh is the software lead at Team ARES. He has a knack for competitive programming, machine and deep learning and robotics."
 linkedin: "https://www.linkedin.com/in/harsh-gupta-202418187/"
-ownimage:"harsh-profile.jpeg"
+ownimage: "harsh-profile.jpeg"
 Category: articles
 Tags: [introm beginner, Sensor fusion, Localization, Kalman Filters]
-Date: 2020-08-17
+date: 2020-08-17
 image:
 	feature:"https://blog.lidarnews.com/wp-content/uploads/2018/02/scale.gif"
 ---
