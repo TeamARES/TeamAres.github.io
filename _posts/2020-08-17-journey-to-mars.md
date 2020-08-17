@@ -1,7 +1,7 @@
 ---
 layout: post
-Title: "Journey to Mars"
-Description: "There are a number of reasons to travel to Mars. The first is the realization of an amazing dream! Sending a manned mission to Mars is a fantastic adventure."
+title: "Journey to Mars"
+description: "There are a number of reasons to travel to Mars. The first is the realization of an amazing dream! Sending a manned mission to Mars is a fantastic adventure."
 owner: "Gaurav Verma"
 About: "Gaurav is a Mechanical Lead at Team ARES.He has a keen interest in the field of Mechanical Design and Analysis,Robotics and Ground vehicle systems. His main area of interest include Kinematics of machines, Dynamics and Control."
 linkedin: "https://www.linkedin.com/in/gaurav-verma-93b6b2119"
