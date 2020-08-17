@@ -1,11 +1,11 @@
 ---
-layout:post
+layout: post
 title: "Sensor Fusion and Localization"
 description: "Introduction to Sensor Fusion and Localization"
 owner:"Harsh Gupta"
 about: "Harsh is the Software Lead at Team ARES. He has a knack for competitive programming, machine and deep learning and robotics."
 linkedin:"https://www.linkedin.com/in/harsh-gupta-202418187/"
-ownimage:"harsh_profile"
+ownimage:"harsh_profile.jpeg"
 category:articles
 tags:[intro, beginner, Sensor Fusion, Localization, Kalman Filters]
 date: 2020-08-18
