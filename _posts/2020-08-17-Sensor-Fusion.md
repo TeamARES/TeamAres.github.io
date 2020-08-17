@@ -10,7 +10,7 @@ category: articles
 tags: [introm beginner, Sensor fusion, Localization, Kalman Filters]
 date: 2020-08-17
 image:
-	feature: "https://blog.lidarnews.com/wp-content/uploads/2018/02/scale.gif"
+ feature: "https://blog.lidarnews.com/wp-content/uploads/2018/02/scale.gif"
 ---
 
 ## Preface:
