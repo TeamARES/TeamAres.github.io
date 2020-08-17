@@ -71,7 +71,7 @@ Today, there are more spacecraft operating at Mars than any planet besides Earth
  The Mars Helicopter, Ingenuity, is a technology demonstration to test powered flight on another world for the first time. It is hitching a ride on the Perseverance rover. A series of flight tests will be performed over a 30-Martian-day experimental window that will begin sometime in the spring of 2021 That will be a major milestone: the very first powered flight in the extremely thin atmosphere of Mars! After that, the team will attempt additional experimental flights of incrementally farther distance and greater altitude. After the helicopter completes its technology demonstration, Perseverance will continue its scientific mission.
 
 
-
+---
 ##  **Concepts for Mars Sample Return** 
 
  Mars Sample Return is a series of missions by NASA and the European Space Agency to return samples from Mars’ surface to Earth by 2031. Despite advances in space technology, certain science questions—including whether or not a Mars rock sample contains signs of ancient life—can only be answered in Earth-based laboratories.
@@ -79,3 +79,5 @@ Today, there are more spacecraft operating at Mars than any planet besides Earth
  Was Mars warm and wet for long periods during which life could have arisen, or mostly cold and dry with only brief intervals that could have supported life? What was its early atmosphere like? Can we find direct evidence of past life there, such as fossilized microbes or ancient chemical signatures that resemble life as we know it?
 
  These answers can be found in Mars’ rocks and soil, which lock in atmospheric gases, preserve signs of past life, and carry clues revealing the environment in which they formed. Despite impressive advances in miniaturizing science instruments for space missions, certain questions can only be answered by tools that are too large, heavy, and power-hungry to fly on spacecraft. Fortunately, there’s a way around this limitation: rather than bringing our tools to Mars, we can bring Mars samples back to Earth.
+
+---
