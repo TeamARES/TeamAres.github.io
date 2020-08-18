@@ -1,10 +1,10 @@
 ---
 layout: post-no-feature
 title: "Project Management"
-description: "Getting started with basics of URDF to create you own simulations!"
-owner: "Manan Madan"
-about: "Manan is the Software Lead at Team ARES.He has a keen interest in the feild of Robotics and Artifical Intelligence. His main ares of interest include Path Planning and Computer Vision."
-linkdin: "https://www.linkedin.com/in/manan-madan-646950167/"
+description: "Fluidity in management is necessary for a successful project. Check out ARES' blog article on how to manage a project optimally and increase your chance of success"
+owner: "Pranav Arora"
+about: "Pranav is the Head of Management and Operations at Ares Robotics. An engineering junior, with a natural business acumen, is adept at the skill of multitasking, seeks perfection in his work and therefore sometimes cuts close to deadlines, maintains an earnest and calm personality even in extreme conditions, with exceptional management and analysis skills"
+linkdin: " https://www.linkedin.com/in/pranavarora07/"
 facebook: "facebook link"
 instagram: "instgram link"
 ownimage: "pranav_profile.jpeg"
@@ -12,10 +12,10 @@ category: articles
 tags: [intro, beginner, Gazebo,tutorial ,URDF ,simulation ,robotics]
 date: 2020-08-12
 image:
-  feature: "https://robohub.org/wp-content/uploads/2014/03/Screenshot-from-2014-03-14-07_34_30.png"
+  feature: " "
 ---
 
-Project Manager is the backbone of every project. Therefore it’s no secret that effective project management is one of the most vital aspects to a sustained growth They are anchors that the whole project relies on, and if they can not delegate responsibility, the project inevitably encounters that fate. There are restrictions on funds, time, resources, project managers need to act within this limit in order to reliably meet the expectations. Otherwise, the project can intervene.
+Project Manager is the backbone of every project. Therefore it’s no secret that effective project management is one of the most vital aspects for a sustained growth. They are anchors that the whole project relies on, and if they can not delegate responsibility, the project inevitably encounters that fate. There are restrictions on funds, time, resources, project managers need to act within this limit in order to reliably meet the expectations. Otherwise, the project can intervene.
 
 Project teams comprise people from heterogeneous backgrounds, all of whom have different personal agendas and goals. Therefore to obtain maximum efficiency and the best possible results organizations require a decentralized system of working. Team competitions are like a football match, where even you if have the best player you need not succeed, you need to have a balance and contribution from all the members and have confidence and trust on one other.
 
