@@ -10,15 +10,15 @@ a hydrological  cycle driven by internal and external energy sources are conside
 At the surface, early Mars may have supported an Earthlike erosional regime and relatively warmer and  wetter conditions  
 than today, perhaps having prevailing modern Earth-like periglacial/glacial conditions, which may have been sufficient for life to originate and evolve . 
 
-![map.jpeg](https://drive.google.com/file/d/1lQFYhzoOJMVhedJTeAeyU_xhADG6U7BT/view?usp=sharing)
+![map.jpeg](img/basin_pic2.jpeg)
 
 ### Simplified map of geological features on Mars. The shaded area is the northern plain. The lower area is the southern cratered terrain
  
 The Argyre province is a major geological province in the southern cratered highlands of Mars. Geological and hydrological histories have been detailed 
-through a mapping investigation with Viking, Mars Global Surveyor (MGS), Mars ### Odyssey (ODY), and Mars Reconnaissance Orbiter (MRO) . 
+through a mapping investigation with Viking, Mars Global Surveyor (MGS), Mars Odyssey (ODY), and Mars Reconnaissance Orbiter (MRO) . 
 
 
-![Argyre.jpeg](https://drive.google.com/file/d/1pmugp--SrzitQONAcwbg7d8D4y1MQVZs/view?usp=sharing)
+![Argyre.jpeg](img/basin_pic1.jpg)
 ### A map of the Argyre region and the Chryse trough. Alignment of several valleys and basins along the Chryse trough system were cited as evidence for water         
 ### flow from the south polar regions, through the Argyre basin to the northern lowlands
 
@@ -40,10 +40,10 @@ materials composed of P, K, Al, Ca, Fe, and other elements necessary for life to
 
 On the basis of the available photogeology, the perennial (water)ice cored mounds  within the Argyre basin are recent features, dating from 
 the Late Amazonian ,and their proposed hydraulic, tectonic, and hydro-tectonic models of formation and functioning involve freeze thaw cycling. 
-The OSPs within the floor of Argyre basin ###could be of exceptional astrobiological interest, because the heat gradients          
+The OSPs within the floor of Argyre basin could be of exceptional astrobiological interest, because the heat gradients          
 produced hydrothermal activity, which in turn resulted in upwelling processes, enhancing the prospect of fossilized and extant life. 
 
-![Sites.jpeg](https://drive.google.com/file/d/1oM6XPORO_qdZJG7rte3w0i_u8A53nhnn/view?usp=sharing)
+![Sites.jpeg](img/basin_pic3.jpeg)
 ### Overview of the site, showing lobes, mantle deposits, and gullies 
 
 ### (3)Sedimentary deposits left behind by glaciers
