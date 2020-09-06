@@ -18,7 +18,7 @@ The Argyre province is a major geological province in the southern cratered high
 through a mapping investigation with Viking, Mars Global Surveyor (MGS), Mars Odyssey (ODY), and Mars Reconnaissance Orbiter (MRO) . 
 
 
-![Argyre](img/basin_pic1.jpg)
+![Argyre](img/basin_pic1.jpeg)
 ### A map of the Argyre region and the Chryse trough. Alignment of several valleys and basins along the Chryse trough system were cited as evidence for water         
 ### flow from the south polar regions, through the Argyre basin to the northern lowlands
 
