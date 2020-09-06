@@ -10,7 +10,7 @@ a hydrological  cycle driven by internal and external energy sources are conside
 At the surface, early Mars may have supported an Earthlike erosional regime and relatively warmer and  wetter conditions  
 than today, perhaps having prevailing modern Earth-like periglacial/glacial conditions, which may have been sufficient for life to originate and evolve . 
 
-![map.jpeg](img/basin_pic2.jpeg)
+![map](img/basin_pic2.jpeg)
 
 ### Simplified map of geological features on Mars. The shaded area is the northern plain. The lower area is the southern cratered terrain
  
@@ -18,7 +18,7 @@ The Argyre province is a major geological province in the southern cratered high
 through a mapping investigation with Viking, Mars Global Surveyor (MGS), Mars Odyssey (ODY), and Mars Reconnaissance Orbiter (MRO) . 
 
 
-![Argyre.jpeg](img/basin_pic1.jpg)
+![Argyre](img/basin_pic1.jpg)
 ### A map of the Argyre region and the Chryse trough. Alignment of several valleys and basins along the Chryse trough system were cited as evidence for water         
 ### flow from the south polar regions, through the Argyre basin to the northern lowlands
 
@@ -43,7 +43,7 @@ the Late Amazonian ,and their proposed hydraulic, tectonic, and hydro-tectonic m
 The OSPs within the floor of Argyre basin could be of exceptional astrobiological interest, because the heat gradients          
 produced hydrothermal activity, which in turn resulted in upwelling processes, enhancing the prospect of fossilized and extant life. 
 
-![Sites.jpeg](img/basin_pic3.jpeg)
+![Sites](img/basin_pic3.jpeg)
 ### Overview of the site, showing lobes, mantle deposits, and gullies 
 
 ### (3)Sedimentary deposits left behind by glaciers
