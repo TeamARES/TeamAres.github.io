@@ -10,13 +10,13 @@ In the modern cell, there are different molecules that fulfilled the roles-
 - DNA store the hereditary information and can be replicated to pass the information on to the next generations.
 - RNA is involved in converting the information stored in DNA into protein. RNA is synthesized using DNA as the template and proteins as the catalyst for the reaction.
 
-![alt text](file:///C:/Users/arjun/Desktop/dnaRNaprotein.jpg)
+![alt text](/img/dnaRNaprotein.jpg)
 
 RNA is considered to be the cellular pool in the modern cell exists in the ribosomes, a structure that considers largely of rRNA and uses messenger RNA (mRNA) and transfer RNA (tRNA) to construct proteins. And rRNA itself self catalyzes peptide bond formation during protein synthesis. As RNA and DNA are structurally similar, single-stranded RNA could have given rise to double-stranded DNA and then DNA becomes the storage facility of genetic material because it provided a more stable structure.
 
 An experiment is conducted to explore how the RNA-containing cell called protocell works. Simpler fatty acids formed leaky liposome that allows single-stranded RNA nucleotide to move into the liposome but prevented the large RNA chains from moving out. Furthermore, they can prod the liposomes into growing and dividing in the conditions in which the RNA molecule could serve as a template for synthesis of a complementary RNA strand.
 
-![alt text](file:///C:/Users/arjun/Desktop/rna%20world.jpg)
+![alt text](/img/rna_world.jpg)
 
 The ability of RNA to catalyses its own replication, using itself as the template and new term is coined by scientist RNA-world hypothesis which can prove the origin of Life. In the precellular stage in the evolution of life in which RNA is capable of storing, copying and expressing genetic information, as well as the catalyzing other chemical reactions.
 
