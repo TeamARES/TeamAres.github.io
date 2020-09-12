@@ -9,10 +9,8 @@ category: "articles"
 tags: tags: [origin, life, beginning, hypothesis, science, astrobiology]
 date:
 image:
- feature:" https://drive.google.com/drive/folders/1i0MuWZNmp2QQxrhFm_uI2a_BV3Yc8wc8?usp=sharing"
- feature:"https://drive.google.com/file/d/1qJjmhJeCYpf1BxCNnLzgb8Mo8xDBX8WC/view?usp=sharing"
  feature:"https://drive.google.com/file/d/1h9w00GnmD7ZQFmlGRYLJaTdADAfw24IC/view?usp=sharing"
- ---
+---
 
 # Origin of Life
 One biggest question arises in everyone mind that how life began? At the initial begin simple organisms arise and proceed to the complex life after evolution. According to Darwin’s theory of evolution by natural selection that there is not necessarily a ladder of progress from simple to complex forms. Which gave us a conclusion that all life ranging from simple to complex had a single origin in the distant past.
