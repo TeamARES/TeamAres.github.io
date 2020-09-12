@@ -1,18 +1,16 @@
 ---
-
 layout: post
 title: "Origin of Life"
 description: "Life is ranging from simple to complex had a single origin in the distant past."
 owner: "Arjun Singh"
 about: "Arjun is the Science Team. He has a interest in the field of life science and machine learning. He is learning biocomputing."
-linkedIn: "https://www.linkedin.com/in/arjun-singh-a8b199181"
+linkedin: "https://www.linkedin.com/in/arjun-singh-a8b199181"
 own image: "https://drive.google.com/file/d/1KWkWAZiMnd4PJiD4fySRb0j1qaRcCwMe/view?usp=sharing"
-category: "articles"
-tags: tags: [origin, life, beginning, hypothesis, science, astrobiology]
-date:
+category: articles
+tags: [origin, life, beginning, hypothesis, science, astrobiology]
+date: 2020-09-12
 image:
  feature:"https://drive.google.com/file/d/1h9w00GnmD7ZQFmlGRYLJaTdADAfw24IC/view?usp=sharing"
-
 ---
 
 # Origin of Life
